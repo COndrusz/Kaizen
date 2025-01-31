@@ -1,0 +1,3 @@
+[submodule "Kaizen/vendor/spdlog"]
+	path = Kaizen/vendor/spdlog
+	url = https://github.com/gabime/spdlog
