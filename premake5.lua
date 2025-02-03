@@ -18,6 +18,11 @@ project "Kaizen"
 	targetdir("bin/" .. outputdir .. "/%{prj.name}")
 	objdir("bin-int/" .. outputdir .. "/%{prj.name}")
 
+
+	pchheader "kzpch.h"
+	pchsource "Kaizen/src/kzpch.cpp"
+
+
 	files
 	{
 		"%{prj.name}/src/**.h",

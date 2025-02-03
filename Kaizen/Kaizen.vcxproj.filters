@@ -34,6 +34,7 @@
     <ClInclude Include="src\Kaizen\Log.h">
       <Filter>Kaizen</Filter>
     </ClInclude>
+    <ClInclude Include="src\kzpch.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kaizen\Application.cpp">
@@ -42,5 +43,6 @@
     <ClCompile Include="src\Kaizen\Log.cpp">
       <Filter>Kaizen</Filter>
     </ClCompile>
+    <ClCompile Include="src\kzpch.cpp" />
   </ItemGroup>
 </Project>

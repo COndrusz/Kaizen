@@ -1,3 +1,4 @@
+#include "kzpch.h"
 #include "Log.h"
 
 namespace Kaizen
