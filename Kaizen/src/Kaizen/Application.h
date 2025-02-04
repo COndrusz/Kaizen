@@ -1,6 +1,7 @@
 #pragma once
 
 #include "Core.h"
+#include "Window.h"
 
 namespace Kaizen {
 	class KAIZEN_API Application
@@ -9,6 +10,9 @@ namespace Kaizen {
 		Application();
 		virtual ~Application();
 		void Run();
+	private:
+		std::unique_ptr<Window> m_Window;
+		bool m_Running = true;
 	};
 
 

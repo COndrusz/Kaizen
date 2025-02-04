@@ -7,15 +7,18 @@
 namespace Kaizen {
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 	Application::~Application()
 	{
 	}
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		KZ_TRACE(e);
 
-		while (true);
+		KZ_CORE_INFO("Hello");
+		while (m_Running) 
+		{
+			m_Window->OnUpdate();
+		}
 	}
 }

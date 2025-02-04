@@ -85,6 +85,7 @@ namespace Kaizen {
 		return os << e.ToString();
 	}
 
+	/*
 	template<typename T>
 	struct fmt::formatter<T,
 		std::enable_if_t<std::is_base_of_v<Kaizen::Event, T>, char>>
@@ -96,4 +97,5 @@ namespace Kaizen {
 			return fmt::formatter<std::string>::format(event.ToString(), ctx);
 		}
 	};
+	*/
 }

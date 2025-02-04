@@ -7,6 +7,9 @@
     <Filter Include="Kaizen\Events">
       <UniqueIdentifier>{0BBBF01E-777B-6C55-40B6-B5D2AC35B131}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Platform">
+      <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Kaizen.h" />
@@ -34,6 +37,12 @@
     <ClInclude Include="src\Kaizen\Log.h">
       <Filter>Kaizen</Filter>
     </ClInclude>
+    <ClInclude Include="src\Kaizen\Window.h">
+      <Filter>Kaizen</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>Platform</Filter>
+    </ClInclude>
     <ClInclude Include="src\kzpch.h" />
   </ItemGroup>
   <ItemGroup>
@@ -42,6 +51,9 @@
     </ClCompile>
     <ClCompile Include="src\Kaizen\Log.cpp">
       <Filter>Kaizen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>Platform</Filter>
     </ClCompile>
     <ClCompile Include="src\kzpch.cpp" />
   </ItemGroup>

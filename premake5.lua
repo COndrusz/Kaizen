@@ -45,7 +45,8 @@ project "Kaizen"
 	links
 	{
 		"GLFW",
-		"opengl132.lib"
+		"opengl32.lib",
+		"dwmapi.lib"
 	}
 	
 	filter "system:windows"
