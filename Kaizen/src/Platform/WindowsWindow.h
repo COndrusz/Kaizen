@@ -1,8 +1,8 @@
 #pragma once
 #include "Kaizen/Window.h"
 #include "Kaizen/Log.h"
-#include <GLFW/glfw3.h>
 
+#include "GLFW/glfw3.h"
 
 namespace Kaizen 
 {

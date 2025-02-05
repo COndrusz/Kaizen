@@ -13,8 +13,10 @@ outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 -- Include directories relative to root folder (solution directory)
 IncludeDir = {}
 IncludeDir["GLFW"] = "Kaizen/vendor/GLFW/include"
+IncludeDir["Glad"] = "Kaizen/vendor/Glad/include"
 
 include "Kaizen/vendor/GLFW"
+include "Kaizen/vendor/GLAD"
 
 project "Kaizen"
 	location "Kaizen"
@@ -39,12 +41,14 @@ project "Kaizen"
 	{
 		"%{prj.name}/src",
 		"%{prj.name}/vendor/spdlog/include",
-		"%{IncludeDir.GLFW}"
+		"%{IncludeDir.GLFW}",
+		"%{IncludeDir.Glad}"
 	}
 
 	links
 	{
 		"GLFW",
+		"Glad",
 		"opengl32.lib",
 		"dwmapi.lib"
 	}
@@ -56,7 +60,8 @@ project "Kaizen"
 		defines 
 		{
 			"KZ_PLATFORM_WINDOWS",
-			"KZ_BUILD_DLL"
+			"KZ_BUILD_DLL",
+			"GLFW_INCLUDE_NONE"
 		}
 		buildoptions { "/utf-8" }
 

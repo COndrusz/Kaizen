@@ -2,7 +2,7 @@
 #include "Application.h"
 #include "Kaizen/Log.h"
 
-
+#include <glad/glad.h>
 
 namespace Kaizen {
 
@@ -12,6 +12,8 @@ namespace Kaizen {
 	{
 		m_Window = std::unique_ptr<Window>(Window::Create());
 		m_Window->SetEventCallback(BIND_EVENT_FN(OnEvent));
+
+
 	}
 	Application::~Application()
 	{
