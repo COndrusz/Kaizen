@@ -70,7 +70,7 @@ namespace Kaizen {
 		{
 			if (m_Event.GetEventType() == T::GetStaticType())
 			{
-				m_Event.m_Handled = funct(*(T*)&m_Event);
+				m_Event.m_Handled = func(*(T*)&m_Event);
 				return true;
 			}
 			return false;
@@ -98,4 +98,5 @@ namespace Kaizen {
 		}
 	};
 	*/
+	
 }
