@@ -51,7 +51,6 @@ project "Kaizen"
 	
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 
 		defines 
@@ -67,14 +66,17 @@ project "Kaizen"
 		}
 	filter "configurations:Debug"
 		defines "KZ_DEBUG"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "KZ_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "KZ_DIST"
+		buildoptions "/MD"
 		optimize "On"
 
 project "Sandbox"
@@ -104,7 +106,6 @@ project "Sandbox"
 	
 	filter "system:windows"
 		cppdialect "C++17"
-		staticruntime "On"
 		systemversion "latest"
 
 		defines 
@@ -116,12 +117,15 @@ project "Sandbox"
 
 	filter "configurations:Debug"
 		defines "KZ_DEBUG"
+		buildoptions "/MD"
 		symbols "On"
 
 	filter "configurations:Release"
 		defines "KZ_RELEASE"
+		buildoptions "/MD"
 		optimize "On"
 
 	filter "configurations:Dist"
 		defines "KZ_DIST"
+		buildoptions "/MD"
 		optimize "On"
