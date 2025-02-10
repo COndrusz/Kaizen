@@ -7,8 +7,14 @@
     <Filter Include="Kaizen\Events">
       <UniqueIdentifier>{0BBBF01E-777B-6C55-40B6-B5D2AC35B131}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Kaizen\ImGui">
+      <UniqueIdentifier>{71BB3A20-5D1E-CAC4-06A4-027BF2E59547}</UniqueIdentifier>
+    </Filter>
     <Filter Include="Platform">
       <UniqueIdentifier>{2AC788B4-1694-E3BF-3FAD-D1672BD9184E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Platform\OpenGL">
+      <UniqueIdentifier>{1E7D2C1D-8A08-9AE1-9319-1DD6FF23F6E1}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -34,6 +40,9 @@
     <ClInclude Include="src\Kaizen\Events\MouseEvent.h">
       <Filter>Kaizen\Events</Filter>
     </ClInclude>
+    <ClInclude Include="src\Kaizen\ImGui\ImGuiLayer.h">
+      <Filter>Kaizen\ImGui</Filter>
+    </ClInclude>
     <ClInclude Include="src\Kaizen\Layer.h">
       <Filter>Kaizen</Filter>
     </ClInclude>
@@ -46,6 +55,9 @@
     <ClInclude Include="src\Kaizen\Window.h">
       <Filter>Kaizen</Filter>
     </ClInclude>
+    <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h">
+      <Filter>Platform\OpenGL</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\WindowsWindow.h">
       <Filter>Platform</Filter>
     </ClInclude>
@@ -55,6 +67,9 @@
     <ClCompile Include="src\Kaizen\Application.cpp">
       <Filter>Kaizen</Filter>
     </ClCompile>
+    <ClCompile Include="src\Kaizen\ImGui\ImGuiLayer.cpp">
+      <Filter>Kaizen\ImGui</Filter>
+    </ClCompile>
     <ClCompile Include="src\Kaizen\Layer.cpp">
       <Filter>Kaizen</Filter>
     </ClCompile>
@@ -63,6 +78,9 @@
     </ClCompile>
     <ClCompile Include="src\Kaizen\Log.cpp">
       <Filter>Kaizen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.cpp">
+      <Filter>Platform\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="src\Platform\WindowsWindow.cpp">
       <Filter>Platform</Filter>
