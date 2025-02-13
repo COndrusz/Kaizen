@@ -11,11 +11,11 @@ public:
 	}
 	void OnUpdate() override
 	{
-		KZ_INFO("ExampleLayer::Update");
+
 	}
 	void OnEvent(Kaizen::Event& event) override
 	{
-		KZ_TRACE("{0}", event.ToString());
+
 	}
 };
 

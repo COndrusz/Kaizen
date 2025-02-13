@@ -1,7 +1,7 @@
 #include "kzpch.h"
 #include "Application.h"
 #include "Kaizen/Log.h"
-
+#include "Kaizen/Input.h"
 #include <glad/glad.h>
 
 namespace Kaizen {
@@ -32,15 +32,18 @@ namespace Kaizen {
 			for (Layer* layer : m_LayerStack)
 				layer->OnUpdate();
 
+			auto [x, y] = Input::GetMousePosition();
+
 			m_Window->OnUpdate();
 			glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT | GL_STENCIL_BUFFER_BIT);
 		}
 	}
+
 	void Application::OnEvent(Event& e)
 	{
 		EventDispatcher dispatcher(e);
 		dispatcher.Dispatch<WindowCloseEvent>(BIND_EVENT_FN(OnWindowClosed));
-		//KZ_CORE_TRACE("{0}", e.ToString());
+
 
 		for (auto it = m_LayerStack.end(); it != m_LayerStack.begin();)
 		{

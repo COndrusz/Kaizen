@@ -64,6 +64,8 @@
     <ClInclude Include="src\kzpch.h" />
     <ClInclude Include="src\Kaizen\Input.h" />
     <ClInclude Include="src\Platform\Windows\WindowsInput.h" />
+    <ClInclude Include="src\Kaizen\KeyCodes.h" />
+    <ClInclude Include="src\Kaizen\MouseButtonCodes.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Kaizen\Application.cpp">

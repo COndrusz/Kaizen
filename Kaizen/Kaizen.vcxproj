@@ -162,9 +162,11 @@
     <ClInclude Include="src\Kaizen\Events\MouseEvent.h" />
     <ClInclude Include="src\Kaizen\ImGui\ImGuiLayer.h" />
     <ClInclude Include="src\Kaizen\Input.h" />
+    <ClInclude Include="src\Kaizen\KeyCodes.h" />
     <ClInclude Include="src\Kaizen\Layer.h" />
     <ClInclude Include="src\Kaizen\LayerStack.h" />
     <ClInclude Include="src\Kaizen\Log.h" />
+    <ClInclude Include="src\Kaizen\MouseButtonCodes.h" />
     <ClInclude Include="src\Kaizen\Window.h" />
     <ClInclude Include="src\Platform\OpenGL\ImGuiOpenGLRenderer.h" />
     <ClInclude Include="src\Platform\Windows\WindowsWindow.h" />
